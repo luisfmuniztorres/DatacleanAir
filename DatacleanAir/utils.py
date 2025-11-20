@@ -18,3 +18,16 @@ def simple_stats(arr: np.ndarray) -> Tuple[float, float]:
     mean = float(np.nanmean(arr))
     std = float(np.nanstd(arr))
     return mean, std
+
+def z_score_normalize(arr: np.ndarray) -> np.ndarray:
+    """
+    Z-score normalization: (x - mean) / std , ignoring NaNs.
+    """
+    x = np.asarray(arr, dtype=float)
+    mean = np.nanmean(x)
+    std = np.nanstd(x)
+
+    if std == 0 or np.isnan(std):
+        return np.zeros_like(x)
+
+    return (x - mean) / std
