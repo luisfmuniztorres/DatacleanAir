@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "DatacleanAir"
+version = "0.1.0"
+description = "Data cleaning tools for air quality analysis"
+readme = "README.md"
+license = { text = "MIT" }
+
+authors = [
+    { name="Luis Fernando Muñiz Torres", email="lmunizt2400@alumno.ipn.mx" },
+    { name="Erika Alarcón Ruiz", email="erika.ar@cdmadero.tecnm.mx" },
+    { name="Francisco López Huerta", email="flo012579@gmail.com" },
+    { name="Felipe Caballero Briones", email="fcaballero@ipn.mx" }
+]
+
+requires-python = ">=3.8"
+
+dependencies = [
+    "numpy>=1.22",
+    "pandas>=1.4",
+    "scipy>=1.8"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/tu_usuario/airquality-tools"
+Documentation = "https://github.com/tu_usuario/airquality-tools"
+Source = "https://github.com/tu_usuario/airquality-tools"
+Issues = "https://github.com/tu_usuario/airquality-tools/issues"
+
+
+[tool.setuptools]
+packages = ["airqc"] 
+
+[tool.setuptools.package-data]
+"airqc" = ["*.txt", "*.csv"]
