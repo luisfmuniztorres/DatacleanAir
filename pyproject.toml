@@ -12,7 +12,6 @@ license = { text = "MIT" }
 
 authors = [
     { name="Luis Fernando Muñiz Torres", email="lmunizt2400@alumno.ipn.mx" },
-    { name="Erika Alarcón Ruiz", email="erika.ar@cdmadero.tecnm.mx" },
     { name="Francisco López Huerta", email="flo012579@gmail.com" },
     { name="Felipe Caballero Briones", email="fcaballero@ipn.mx" }
 ]
